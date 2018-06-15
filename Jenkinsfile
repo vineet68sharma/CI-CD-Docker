@@ -19,7 +19,13 @@ node {
         sh "mvn clean install"
     }
 
-    
+    stage('Sonar'){
+        try {
+            sh "mvn sonar:sonar"
+        } catch(error){
+            echo "The sonar server could not be reached ${error}"
+        }
+     }
 
     stage("Image Prune"){
         imagePrune(CONTAINER_NAME)
@@ -54,7 +60,7 @@ def imageBuild(containerName, tag){
 }
 
 def pushToImage(containerName, tag, dockerUser, dockerPassword){
-    sh "docker login -u vineet0164 -p Rjil@1234"
+    sh "docker login -u $dockerUser -p $dockerPassword"
     sh "docker tag $containerName:$tag $dockerUser/$containerName:$tag"
     sh "docker push $dockerUser/$containerName:$tag"
     echo "Image push complete"
