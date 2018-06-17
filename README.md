@@ -1,7 +1,5 @@
-#!["Docker Pulls](https://img.shields.io/docker/pulls/hakdogan/jenkins-pipeline.svg)
-#[![Analytics](https://ga-beacon.appspot.com/UA-110069051-1/jenkins-pipeline/readme)](https://github.com/igrigorik/ga-beacon)
 
-# Automated CI/CD using Docker and Jenkins
+### Automated CI/CD using Docker and Jenkins
 
 This repository is a tutorial it tries to exemplify how to automatically manage the process of building, testing with the highest coverage, and deployment phases.
 
