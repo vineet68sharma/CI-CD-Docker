@@ -145,6 +145,9 @@ Since we will perform some operations such as ``checkout codebase`` and ``pushin
 
 We use the value we entered in the ``ID`` field to Docker Login in the script file. Now, we define pipeline under _Jenkins Home Page -> New Item_ menu.
 
+![](images/015.png)
+Also Dont forget to makr env variables fpr Docker username and Docker password .
+
 ![](images/010.png)
 
 In this step, we select ``GitHub hook trigger for GITScm pooling`` options for automatic run of the pipeline by ``Github hook`` call.
@@ -158,6 +161,10 @@ Also in the Pipeline section, we select the ``Pipeline script from SCM`` as Defi
 After that, when a push is done to the remote repository or when you manually trigger the pipeline by ``Build Now`` option, the steps described in Jenkins file will be executed.
 
 ![](images/013.png)
+
+After that, when a Deployment  is done to the remote repository or when you manually trigger the pipeline by ``Build Now`` You can see the Workflow step by step .
+
+![](images/014.png)
 
 ## Review important points of the Jenkins file
 
