@@ -173,7 +173,7 @@ After that, when a Deployment  is done to the remote repository or when you manu
 ![](images/014.png)
 
 
-After Deployment is done on and Container is running , You can check it by URL and Port number on which the service is running
+After Deployment is done and Container is running , You can check it by URL and Port number on which the service is running
 
  http://ec2-50-16-10-93.compute-1.amazonaws.com:8090/
 
